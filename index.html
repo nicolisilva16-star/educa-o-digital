@@ -1,17 +1,66 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Pessoal</title>
+    <title>Blog Pessoal - Lana Del Rey</title>
+    
+    <!-- Ícone da aba -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1> Alana Del Rey - A nova diva do mundo POP </h1>
-          <img src="images.jpeg" alt="Alana">
-        <p>Lana Del Rey lançou o single "007 First Light", faixa principal do novo jogo da franquia James Bond [05.01, 05.04]. No campo pessoal, a cantora oficializou seu casamento com o guia turístico de pântanos Jeremy Dufrene, após anos de amizade [05.01, 05.04, 05.08]. Além disso, Lana está preparando um álbum focado na estética country [05.01, 05.11].</p>
+
+    <header class="site-header">
+        <h1>Blog Pessoal</h1>
     </header>
-    
+
+    <main class="container">
+        <article class="card">
+            <figure class="card-image">
+                <img src="images.jpeg" alt="Foto de Lana Del Rey" loading="lazy">
+            </figure>
+
+            <div class="card-content">
+                <div class="post-meta">
+                    <span class="category">Música & Pop</span>
+                    <time datetime="2026-05-01" class="post-date">01 de Maio, 2026</time>
+                </div>
+
+                <h2>Lana Del Rey - A nova diva do mundo POP</h2>
+
+                <p>
+                    Lana Del Rey lançou a faixa principal <strong>"007 First Light"</strong>, música tema do novo jogo da franquia James Bond.
+                </p>
+
+                <p>
+                    No campo pessoal, a cantora oficializou seu casamento com o guia turístico de pântanos Jeremy Dufrene, após anos de amizade.
+                </p>
+
+                <p>
+                    Além disso, Lana já está trabalhando em seu próximo projeto de estúdio, um álbum focado na estética e sonoridade do gênero country.
+                </p>
+
+                <!-- Ações interativas -->
+                <div class="card-footer">
+                    <button class="btn-like" id="likeBtn">
+                        ❤️ Curtir (<span id="likeCount">0</span>)
+                    </button>
+                    <button class="btn-share" id="shareBtn">
+                        🔗 Compartilhar
+                    </button>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Blog Pessoal. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript para as funções interativas -->
+    <script src="script.js"></script>
 </body>
-</html> 
+</html>
